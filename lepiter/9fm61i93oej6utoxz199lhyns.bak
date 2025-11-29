@@ -137,14 +137,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2025-11-28T23:51:05.885-03:00"
+						"dateAndTimeString" : "2025-11-28T23:50:08.688-03:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "OE7cwBMBDgCKiDiDAVhndA=="
 				},
-				"code" : "mySecurityFiles := jsonFiles collect: [ :jsonFile | \n    SecurityFile \n        fromDictionary: (STONJSON fromString: jsonFile contents) \n        named: jsonFile basename \n].\n\nknowledgeBase := SecurityKnowledgeBase new.\nknowledgeBase files: mySecurityFiles.\n\nknowledgeBase"
+				"code" : "mySecurityFiles := allJsonFiles collect: [ :jsonFile | \n    SecurityFile \n        fromDictionary: (STONJSON fromString: jsonFile contents) \n        named: jsonFile basename \n].\n\nknowledgeBase := SecurityKnowledgeBase new.\nknowledgeBase files: mySecurityFiles.\n\nknowledgeBase"
 			}
 		]
 	},
